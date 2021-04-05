@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ancientpower-provider
+dubbo:
+  scan:
+    base-packages: io.jovi.ancientpower
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://192.168.8.100:2181
