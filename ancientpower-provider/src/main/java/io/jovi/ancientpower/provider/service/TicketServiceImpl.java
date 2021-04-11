@@ -17,7 +17,7 @@ import org.apache.dubbo.config.annotation.DubboService;
  * @author MaoJiaWei
  * @version 1.0
  */
-@DubboService(group = "dubbo")
+@DubboService
 public class TicketServiceImpl implements TicketService {
     /**
      * 接口定义
