@@ -17,6 +17,7 @@
         <module>ancientpower-consumer</module>
         <module>ancientpower-provider</module>
         <module>ancientpower-provider-facade</module>
+        <module>ancientpower-sentinel</module>
     </modules>
 
     <properties>
