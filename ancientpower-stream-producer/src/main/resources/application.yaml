@@ -1,0 +1,22 @@
+server:
+  port: 10003
+rocketmq:
+  consumer:
+    consumeMessageBatchMaxSize: 1
+    consumeThreadMax: 64
+    consumeThreadMin: 20
+    groupName: ${spring.application.name}
+    isOnOff: 'on'
+    namesrvAddr: localhost:9876
+    topics: input1
+  producer:
+    groupName: ${spring.application.name}
+    isOnOff: 'on'
+    maxMessageSize: 131027
+    namesrvAddr: localhost:9876
+    retryTimesWhenSendFailed: 2
+    sendMsgTimeout: 10000
+    topics: input1
+spring:
+  application:
+    name: ancientpower-rocketmq

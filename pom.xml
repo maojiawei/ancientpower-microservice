@@ -18,6 +18,7 @@
         <module>ancientpower-provider</module>
         <module>ancientpower-provider-facade</module>
         <module>ancientpower-sentinel</module>
+        <module>ancientpower-stream-producer</module>
     </modules>
 
     <properties>
