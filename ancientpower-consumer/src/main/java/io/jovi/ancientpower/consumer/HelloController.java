@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
-    @DubboReference(timeout = 300000)
+    @DubboReference(timeout = 300000,check = false)
     private TicketService service;
 
     @GetMapping("get")
