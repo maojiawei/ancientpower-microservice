@@ -1,0 +1,10 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: ancientpower-sentinel
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 9999
