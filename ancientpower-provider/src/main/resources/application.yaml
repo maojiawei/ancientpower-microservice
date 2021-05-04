@@ -1,8 +1,12 @@
 server:
-  port: 8080
+  port: 10000
 spring:
   application:
     name: ancientpower-provider
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
 dubbo:
   scan:
     base-packages: io.jovi.ancientpower
