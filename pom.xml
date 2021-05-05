@@ -20,6 +20,7 @@
         <module>ancientpower-sentinel</module>
         <module>ancientpower-stream-producer</module>
         <module>ancientpower-springcloud-gateway</module>
+        <module>ancientpower-rest</module>
     </modules>
 
     <properties>

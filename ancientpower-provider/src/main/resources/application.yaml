@@ -7,6 +7,10 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:8080
+    nacos:
+      server-addr: 127.0.0.1:8848
+      username: nacos
+      password: nacos
 dubbo:
   scan:
     base-packages: io.jovi.ancientpower
@@ -16,3 +20,5 @@ dubbo:
   registry:
     address: nacos://localhost:8848
     timeout: 10000
+  cloud:
+    subscribed-services:
