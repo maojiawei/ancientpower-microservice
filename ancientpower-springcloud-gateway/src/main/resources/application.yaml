@@ -1,0 +1,22 @@
+server:
+  port: 9900
+spring:
+  application:
+    name: ancientpower-springcloud-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: false
+          enabled: true
+      routes:
+        - id: ancientpower-provider
+          uri: lb://ancientpower-provider
+          predicates:
+            - Path=/ancientpower-provider/**
+          filters:
+            - StripPrefix=1

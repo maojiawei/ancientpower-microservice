@@ -19,6 +19,7 @@
         <module>ancientpower-provider-facade</module>
         <module>ancientpower-sentinel</module>
         <module>ancientpower-stream-producer</module>
+        <module>ancientpower-springcloud-gateway</module>
     </modules>
 
     <properties>
@@ -44,13 +45,13 @@
 <!--                <version>${spring-boot.version}</version>-->
 <!--                <type>pom</type>-->
 <!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.cloud</groupId>-->
-<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
-<!--                <version>${spring-cloud.version}</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>import</scope>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
